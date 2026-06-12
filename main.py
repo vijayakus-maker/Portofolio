@@ -1,7 +1,5 @@
 from flask import Flask, render_template,request, redirect
 
-
-
 app = Flask(__name__)
 
 #Halaman Konten Berjalan
@@ -22,5 +20,5 @@ def process_form():
     return render_template('index.html', button_python=button_python, button_discord=button_discord, button_html=button_html, button_db=button_db, email=email,
                            text=text)
 
-if __name__ == "main":
+if __name__ == "__main__":
     app.run(debug=True)
