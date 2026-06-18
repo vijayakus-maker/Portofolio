@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/css/style.css" />
-    <title>Portofolio</title>
+    <!-- Font Awesome untuk ikon media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Portofolio - I Gusti Nararya</title>
   </head>
   <body>
     <header class="header">
@@ -23,124 +21,152 @@
           <li class="main-list__item list-item">
             <a class="list-item__link" href="#skills">MY SKILLS</a>
           </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#feedback">FEEDBACK</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main class="main">
-      <!-- Bagian Pratinjau -->
+      <!-- ===== HOME ===== -->
       <section class="main__home home" id="home">
         <h1 class="home__title">I Gusti Nararya Anggara Vijayakusuma</h1>
         <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
       </section>
-      <!-- Bagian Tentang Saya -->
+
+      <!-- ===== ABOUT ===== -->
       <section class="main__about about" id="about">
         <h2 class="about__title">ABOUT ME</h2>
         <div class="about__info info-block">
           <p class="info-block__text">
-            Saya seorang pria menjenjang SMA usia 17 mengikuti kelas Ilmu Pengetahuan Alam tertarik untuk bekerja setelah kuliah
+            Saya seorang pria menjenjang SMA usia 17 mengikuti kelas Ilmu Pengetahuan Alam,
+            tertarik untuk bekerja setelah kuliah. Saya memiliki minat besar dalam
+            pengembangan web dan pemrograman Python.
           </p>
-          <img
-            class="info-block__img"
-            src="data:image/jpeg;base64,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"
-            alt="me"
-            width="250"
-            height="250"
-          />
+          <img class="info-block__img" src="data:image/jpeg;base64,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" alt="me" width="250" height="250" />
         </div>
       </section>
-      <!-- Bagian Keterampilan -->
+
+      <!-- ===== SKILLS ===== -->
       <section class="main__skills skills" id="skills">
         <h2 class="skills__title">MY SKILLS</h2>
+
+        <!-- INFORMASI SKILL (Tugas 1) -->
+        <div class="info-block__text" style="margin-bottom: 30px; font-size: 18px; line-height: 1.8;">
+          <strong>Informasi Skill:</strong><br />
+          Saya memiliki kemampuan dalam <strong>pemrograman Python</strong> untuk membuat berbagai macam aplikasi,
+          mulai dari otomatisasi tugas hingga pengembangan web. Saya juga mahir dalam <strong>pengembangan bot Discord</strong>
+          menggunakan library discord.py. Selain itu, saya menguasai <strong>HTML & CSS</strong> untuk membangun
+          tampilan website yang responsif dan menarik. Untuk penyimpanan data, saya terbiasa menggunakan
+          <strong>database SQL</strong> (MySQL / SQLite) dalam berbagai proyek.
+        </div>
+
         <form action="/" method="POST">
-          <p class="info-block__text">
-           Bisa koding dan berbahasa inggris
-          </p>
           <ul class="skills__list skills-list">
             <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/python.png"
-                alt="python"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+              <img class="skill__img" src="../static/img/python.png" alt="python" width="150" height="150" />
+              <span class="skill__info">Python</span>
+              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT" />
             </li>
             <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/discord.png"
-                alt="discord"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_discord" value="SHOW PROJECT">
+              <img class="skill__img" src="../static/img/discord.png" alt="discord" width="150" height="150" />
+              <span class="skill__info">Discord Bot</span>
+              <input class="skill__button" type="submit" name="button_discord" value="SHOW PROJECT" />
             </li>
             <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/html.png"
-                alt="html"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_html" value="SHOW PROJECT">
+              <img class="skill__img" src="../static/img/html.png" alt="html" width="150" height="150" />
+              <span class="skill__info">HTML & CSS</span>
+              <input class="skill__button" type="submit" name="button_html" value="SHOW PROJECT" />
             </li>
             <li class="skills-list__skill skill">
-              <img
-                class="skill__img"
-                src="../static/img/db.webp"
-                alt="SQL"
-                width="150"
-                height="150"
-              />
-              <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_db" value="SHOW PROJECT">
+              <img class="skill__img" src="../static/img/db.webp" alt="SQL" width="150" height="150" />
+              <span class="skill__info">Database SQL</span>
+              <input class="skill__button" type="submit" name="button_db" value="SHOW PROJECT" />
             </li>
           </ul>
         </form>
-        {% if button_python%}
-          <div class="skills__project project" id="project">
-              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
-              <a class="project__link" href="https://github.com/vijayakus-maker/projek---kamus/blob/main/passgen.py">Buka di GitHub</a>
-          </div>
-        {% endif %}{% if button_discord%}
-          <div class="skills__project project" id="project">
-              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
-              <a class="project__link" href="">Buka di GitHub</a>
-          </div>
-        {% endif %}{% if button_html%}
-          <div class="skills__project project" id="project">
-              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
-              <a class="project__link" href="">Buka di GitHub</a>
-          </div>
-        {% endif %}{% if button_db%}
-          <div class="skills__project project" id="project">
-              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
-              <a class="project__link" href="">Buka di GitHub</a>
-          </div>
+
+        <!-- BLOK PROYEK (Tugas 2: Tautan GitHub) -->
+        {% if button_python %}
+        <div class="skills__project project">
+          <img class="project__img" src="../static/img/python-project.png" alt="project" width="500" />
+          <a class="project__link" href="https://github.com/vijayakus-maker/projek---kamus/blob/main/passgen.py" target="_blank">Buka di GitHub</a>
+        </div>
+        {% endif %}
+
+        {% if button_discord %}
+        <div class="skills__project project">
+          <img class="project__img" src="../static/img/python-project.png" alt="project" width="500" />
+          <a class="project__link" href="https://github.com/vijayakus-maker/projek---kamus/blob/main/edukasi.py" target="_blank">Buka di GitHub</a>
+        </div>
+        {% endif %}
+
+        {% if button_html %}
+        <div class="skills__project project">
+          <img class="project__img" src="../static/img/python-project.png" alt="project" width="500" />
+          <a class="project__link" href="https://github.com/vijayakus-maker/projek---kamus/blob/main/Web%20pribadi" target="_blank">Buka di GitHub</a>
+        </div>
+        {% endif %}
+
+        {% if button_db %}
+        <div class="skills__project project">
+          <img class="project__img" src="../static/img/python-project.png" alt="project" width="500" />
+          <a class="project__link" href="https://github.com/vijayakus-maker/projek---kamus/tree/main/diary-ind-main/diary-ind-main" target="_blank">Buka di GitHub</a>
+        </div>
         {% endif %}
       </section>
-      <!-- Formulir Masukan -->
+
+      <!-- ===== FEEDBACK (Tugas 3: Penyimpanan ke file .txt) ===== -->
       <section class="main__feedback feedback" id="feedback">
         <h2 class="feedback__title">FEEDBACK</h2>
-        <form action="" method="POST" class="feedback__form form">
+
+        {% if feedback_success %}
+        <div style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center;">
+          ✅ Terima kasih! Feedback Anda telah disimpan ke <strong>feedback.txt</strong>.
+        </div>
+        {% endif %}
+
+        <form action="/" method="POST" class="feedback__form form">
           <label for="email">
-            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+            <input type="email" class="form__input" name="email" id="email" placeholder="Masukkan Email" required />
           </label>
           <label for="text">
-            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Komentar Anda..."></textarea>
           </label>
-          <button class="form__button" type="submit" name="send_feedback">SEND</button>
+          <button class="form__button" type="submit" name="send_feedback">KIRIM</button>
         </form>
       </section>
     </main>
-    <!-- Sebuah footer untuk tautan media sosial -->
-    <footer>
 
+    <!-- ===== FOOTER (Tugas 4: Media Sosial) ===== -->
+    <footer>
+      <div class="rounded-social-buttons" style="text-align: center; padding: 30px 0; background: linear-gradient(180deg, rgba(32,50,151,0.9) 0%, #0a0a1a 100%); border-radius: 30px 30px 0 0; margin-top: 50px;">
+        <h4 style="color: #be00a5; margin-bottom: 20px; font-size: 20px;">Hubungi Saya</h4>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <a class="social-button facebook" href="https://www.facebook.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-button twitter" href="https://www.twitter.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a class="social-button youtube" href="https://www.youtube.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; font-size: 24px; transition: all 0.3s; text-decoration: none; border: 1px solid rgba(255,255,255,0.05);">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-top: 20px;">
+          &copy; 2026 I Gusti Nararya. Dibuat dengan ❤️ menggunakan Flask.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
